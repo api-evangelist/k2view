@@ -1,23 +1,76 @@
 aid: k2view
+
 name: K2view
-description: 'K2view is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Turn fragmented enterprise data into reusable data products that power AI, operational systems, and downstream analytics without rebuilding pipelines. K2view provides a Data Product Platform, AI Context Platform, and Micro‑Database technology to enable data integration, virtualization, and data‑as‑a‑service automation for enterprises.'
+
 url: https://raw.githubusercontent.com/api-evangelist/k2view/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gartner-mq
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- Data Integration
+- Data Platform
+- AI
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://www.k2view.com/security/
+- type: Hosts
+  url: hosts/k2view-hosts.yml
+- type: Vendors
+  url: vendors/k2view-vendors.yml
+- type: TermsOfService
+  url: https://www.k2view.com/terms-of-use
+- type: Support
+  url: https://support.k2view.com/
+- type: Security
+  url: https://www.k2view.com/security/
+- type: PrivacyPolicy
+  url: https://www.k2view.com/privacy-policy
+- type: Newsroom
+  url: https://www.k2view.com/news/
+- type: Blog
+  url: https://www.k2view.com/blog
+- type: TrustCenter
+  url: security/k2view-trust-center.yml
+- type: DomainSecurity
+  url: security/k2view-domain-security.yml
 - type: Website
   url: https://www.k2view.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer program or API documentation found on api.k2view.com.
+  evidence:
+    - url: https://api.k2view.com/openapi.json
+      status: 000
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
