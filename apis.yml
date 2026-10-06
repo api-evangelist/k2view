@@ -17,7 +17,7 @@ specificationVersion: '0.20'
 
 created: '2026-10-03'
 
-modified: '2026-10-03'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -33,6 +33,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.k2view.com/news-blog
+  type: Blog
+- url: https://www.k2view.com/news-blog/rss.xml
+  type: BlogRSS
 - type: Compliance
   url: https://www.k2view.com/security/
 - type: Hosts
